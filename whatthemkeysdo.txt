@@ -1,0 +1,22 @@
+
+This file is so that my human brain can have a quick way of reminding itself of important Mac/Nvim keybinds.
+
+
+ -- Mac --
+
+(Ctrl + CMD + f) - Fullscreen any window
+
+-- Nvim -- 
+suggestion
+Leader = " "
+
+(Leader + e) - Open/Close Tree Directory
+(Leader + ff) - Fuzzy Finder
+(Leader + fg) - Live grep
+(Ctrl + j/k) - Prev/Next item suggestion(+ in cmnd line)
+(Ctrl + w -> s/v) - Create new window horizontally/vertically
+(Leader + h) - no highlight
+
+-- Errors --
+
+For some reason whilst within insert mode, the cursor will jump to another set of lines above.
