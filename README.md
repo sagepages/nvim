@@ -1,6 +1,6 @@
 
 # NeoVim Config 
-- Courtesy of "Neovim from Scratch" video series
+- Credit goes to "Neovim from Scratch" video series for this Nvim config setup.
 ## Install the config
 
 Make sure to remove or move your current `nvim` directory
