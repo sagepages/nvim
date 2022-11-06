@@ -60,6 +60,9 @@ return packer.startup(function(use)
 	use("MunifTanjim/prettier.nvim")
 	use("folke/trouble.nvim")
 	use("folke/lsp-colors.nvim")
+	use("windwp/nvim-ts-autotag")
+	use("Shougo/deoplete.nvim")
+	use("zchee/deoplete-clang")
 
 	-- Colorschemes
 	use("folke/tokyonight.nvim")
