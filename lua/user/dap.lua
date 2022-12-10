@@ -13,9 +13,29 @@ if not dap_install_status_ok then
   return
 end
 
-dap_install.setup {}
+local dap_go_status_ok, dap_go = pcall(require, "dap-go")
+if not dap_go_status_ok then
+  return
+end
 
-dap_install.config("python", {})
+local vim_go_status_ok, vim_go = pcall(require, "vim-go")
+if not vim_go_status_ok then
+  return
+end
+
+dap_go.setup {}
+dap_install.setup {}
+vim_go.setup {}
+
+-- testing this setup
+local dbg_list = require("dap-install.api.debuggers").get_installed_debuggers()
+
+for _, debugger in ipairs(dbg_list) do
+  dap_install.config(debugger)
+end
+-- end of testing setup
+
+-- dap_install.config("python", {})
 -- add other configs here
 
 dapui.setup {
