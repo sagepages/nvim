@@ -33,6 +33,9 @@ dapui.setup {
   tray = {
     elements = {},
   },
+  mappings = {
+    open = "o"
+  }
 }
 
 vim.fn.sign_define("DapBreakpoint", { text = "", texthl = "DiagnosticSignError", linehl = "", numhl = "" })
