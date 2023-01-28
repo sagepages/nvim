@@ -14,6 +14,7 @@ local servers = {
 	"yamlls",
 	"ccls",
 	"clangd",
+  "gopls"
 }
 
 lsp_installer.setup()
