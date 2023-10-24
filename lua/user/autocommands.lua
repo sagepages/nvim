@@ -44,3 +44,14 @@ vim.api.nvim_create_autocmd({ "TextYankPost" }, {
     vim.highlight.on_yank { higroup = "Visual", timeout = 200 }
   end,
 })
+
+-- Vim nvim tree transparency
+vim.cmd [[
+  autocmd VimEnter * hi NvimTreeNormal guibg=NONE
+  autocmd VimEnter * hi NvimTreeRootFolder guibg=NONE
+  autocmd VimEnter * hi NvimTreeFolderName guibg=NONE
+  autocmd VimEnter * hi NvimTreeFolderIcon guibg=NONE
+  autocmd ColorScheme * hi NvimTreeNormal guibg=NONE
+  autocmd ColorScheme * hi NvimTreeNormalNC guibg=NONE
+]]
+

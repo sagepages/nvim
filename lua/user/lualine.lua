@@ -25,7 +25,7 @@ local diff = {
 
 local filetype = {
   "filetype",
-  icons_enabled = false,
+  icons_enabled = true,
 }
 
 local location = {
@@ -41,7 +41,7 @@ lualine.setup {
   options = {
     globalstatus = true,
     icons_enabled = true,
-    theme = "auto",
+    theme = "horizon",
     component_separators = { left = "", right = "" },
     section_separators = { left = "", right = "" },
     disabled_filetypes = { "alpha", "dashboard" },

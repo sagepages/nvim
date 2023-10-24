@@ -55,7 +55,6 @@ return packer.startup(function(use)
 	use({ "ahmedkhalf/project.nvim", commit = "541115e762764bc44d7d3bf501b6e367842d3d4f" })
 	use({ "lewis6991/impatient.nvim", commit = "969f2c5c90457612c09cf2a13fee1adaa986d350" })
 	use({ "lukas-reineke/indent-blankline.nvim", commit = "6177a59552e35dfb69e1493fd68194e673dc3ee2" })
-	use({ "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" })
 	use("folke/which-key.nvim")
 	use("MunifTanjim/prettier.nvim")
 	use("folke/trouble.nvim")
@@ -63,6 +62,7 @@ return packer.startup(function(use)
 	use("windwp/nvim-ts-autotag")
 	use("Shougo/deoplete.nvim")
 	use("zchee/deoplete-clang")
+  use("xiyaowong/transparent.nvim")
 
 	-- Colorschemes
 	use("folke/tokyonight.nvim")
@@ -95,13 +95,6 @@ return packer.startup(function(use)
 
 	--Git
 	use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
-
-	-- DAP
-	use({ "mfussenegger/nvim-dap", commit = "014ebd53612cfd42ac8c131e6cec7c194572f21d" })
-	use({ "rcarriga/nvim-dap-ui", commit = "d76d6594374fb54abf2d94d6a320f3fd6e9bb2f7" })
-	use({ "ravenxrz/DAPInstall.nvim", commit = "8798b4c36d33723e7bba6ed6e2c202f84bb300de" })
-  use("leoluz/nvim-dap-go")
-  use("fatih/vim-go")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

@@ -66,3 +66,10 @@ nvim_tree.setup({
 		},
 	},
 })
+
+vim.cmd [[
+  autocmd VimEnter * hi NvimTreeNormal guibg=NONE
+  autocmd VimEnter * hi NvimTreeRootFolder guibg=NONE
+  autocmd VimEnter * hi NvimTreeFolderName guibg=NONE
+  autocmd VimEnter * hi NvimTreeFolderIcon guibg=NONE
+]]
