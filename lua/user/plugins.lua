@@ -63,7 +63,7 @@ return packer.startup(function(use)
 	use("Shougo/deoplete.nvim")
 	use("zchee/deoplete-clang")
   use("xiyaowong/transparent.nvim")
-
+	use({ "goolord/alpha-nvim", commit = "ef27a59e5b4d7b1c2fe1950da3fe5b1c5f3b4c94" })
 	-- Colorschemes
 	use("folke/tokyonight.nvim")
 	use({ "lunarvim/darkplus.nvim", commit = "2584cdeefc078351a79073322eb7f14d7fbb1835" })
@@ -92,6 +92,12 @@ return packer.startup(function(use)
 
 	-- Treesitter
 	use("nvim-treesitter/nvim-treesitter")
+
+  -- UndoTree
+  use("mbbill/undotree")
+
+  -- Harpoon
+  use("ThePrimeagen/Harpoon")
 
 	--Git
 	use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
