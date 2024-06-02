@@ -1,5 +1,5 @@
 local servers = {
-  'lua_ls', 'tsserver', 'pyright'
+  'lua_ls', 'tsserver', 'gopls',
 }
 require('mason').setup()
 require('mason-lspconfig').setup({
