@@ -80,7 +80,7 @@ return packer.startup(function(use)
   use("mbbill/undotree")
 
   -- Trouble
-  use("folke/trouble.nvim")
+  use({"folke/trouble.nvim", commit = "f1168feada93c0154ede4d1fe9183bf69bac54ea" })
 
   -- Gitsigns
 	use("lewis6991/gitsigns.nvim")

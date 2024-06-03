@@ -1,7 +1,7 @@
 -- Shorten function name
 local keymap = vim.keymap.set
 -- Silent keymap option
-local opts = { silent = true }
+local opts = { noremap = true, silent = true }
 
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
@@ -74,4 +74,21 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("x", "<∆>", ":move '>+1<CR>gv-gv", opts)
 -- keymap("x", "<˚>", ":move '<-2<CR>gv-gv", opts)
+
+-- TESTING -- Move to a window no matter what
+keymap("n", "<C-S-h>", "<cmd>wincmd h<cr>", opts)
+keymap("n", "<C-S-j>", "<cmd>wincmd j<cr>", opts)
+keymap("n", "<C-S-k>", "<cmd>wincmd k<cr>", opts)
+keymap("n", "<C-S-l>", "<cmd>wincmd l<cr>", opts)
+
+--Trouble
+keymap("n", "<leader>tt", function()
+    require("trouble").toggle()
+end, opts)
+keymap("n", "[t", function()
+    require("trouble").next({skip_groups = true, jump = true});
+end, opts)
+keymap("n", "]t", function()
+    require("trouble").previous({skip_groups = true, jump = true});
+end, opts)
 
