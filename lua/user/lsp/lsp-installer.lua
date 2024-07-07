@@ -23,13 +23,14 @@ if not lspconfig_status_ok then
 end
 
 
-require('mason-lspconfig').setup_handlers {
-  function (server_name)
-    lspconfig[server_name].setup {
-      on_attach = require("user.lsp.handlers").on_attach
-    }
-  end,
-}
+-- require('mason-lspconfig').setup_handlers {
+--   function (server_name)
+--     lspconfig[server_name].setup {
+--       on_attach = require("user.lsp.handlers").on_attach,
+--       capabilities = require("user.lsp.handlers").capabilities,
+--     }
+--   end,
+-- }
 
 for _, server in pairs(servers) do
   local opts = {
