@@ -123,7 +123,7 @@ local mappings = {
       "Workspace Diagnostics",
     },
     i = { "<cmd>LspInfo<cr>", "Info" },
-    I = { "<cmd>Mason<cr>", "Installer Info" },
+    I = { "<cmd>Mason<cr>", "Mason" },
     j = {
       "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>",
       "Next Diagnostic",
