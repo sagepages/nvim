@@ -50,13 +50,13 @@ return packer.startup(function(use)
 	use({ "JoosepAlviste/nvim-ts-context-commentstring", commit = "88343753dbe81c227a1c1fd2c8d764afb8d36269" })
 
 	use("kyazdani42/nvim-web-devicons")
-	use({ "kyazdani42/nvim-tree.lua", commit = "bdb6d4a25410da35bbf7ce0dbdaa8d60432bc243" })
+	use("kyazdani42/nvim-tree.lua")
 
-  -- Buffers
+	-- Buffers
 	use("akinsho/bufferline.nvim")
 	use({ "moll/vim-bbye", commit = "25ef93ac5a87526111f43e5110675032dbcacf56" })
 
-  -- Lower lua line
+	-- Lower lua line
 	use({ "nvim-lualine/lualine.nvim", commit = "3362b28f917acc37538b1047f187ff1b5645ecdd" })
 
 	use({ "akinsho/toggleterm.nvim", commit = "aaeed9e02167c5e8f00f25156895a6fd95403af8" })
@@ -65,7 +65,7 @@ return packer.startup(function(use)
 	use("MunifTanjim/prettier.nvim")
 	use("folke/lsp-colors.nvim")
 	use("windwp/nvim-ts-autotag")
-  use("xiyaowong/transparent.nvim")
+	use("xiyaowong/transparent.nvim")
 
 	-- Colorschemes
 	use("folke/tokyonight.nvim")
@@ -76,23 +76,23 @@ return packer.startup(function(use)
 	-- Treesitter
 	use("nvim-treesitter/nvim-treesitter")
 
-  -- UndoTree
-  use("mbbill/undotree")
+	-- UndoTree
+	use("mbbill/undotree")
 
-  -- Trouble
-  use({"folke/trouble.nvim", commit = "f1168feada93c0154ede4d1fe9183bf69bac54ea" })
+	-- Trouble
+	use({ "folke/trouble.nvim", commit = "f1168feada93c0154ede4d1fe9183bf69bac54ea" })
 
-  -- Gitsigns
+	-- Gitsigns
 	use("lewis6991/gitsigns.nvim")
 
-  use {
-      "ThePrimeagen/harpoon",
-      branch = "harpoon2",
-      requires = { {"nvim-lua/plenary.nvim"} }
-  }
-  -- LSP
-  use("williamboman/mason.nvim")
-  use("williamboman/mason-lspconfig.nvim")
+	use({
+		"ThePrimeagen/harpoon",
+		branch = "harpoon2",
+		requires = { { "nvim-lua/plenary.nvim" } },
+	})
+	-- LSP
+	use("williamboman/mason.nvim")
+	use("williamboman/mason-lspconfig.nvim")
 	use("hrsh7th/nvim-cmp") -- The completion plugin
 	use("hrsh7th/cmp-buffer") -- buffer completions
 	use("hrsh7th/cmp-path") -- path completions
@@ -100,12 +100,12 @@ return packer.startup(function(use)
 	use("saadparwaiz1/cmp_luasnip") -- snippet completions
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-nvim-lua")
-	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
+	use("nvimtools/none-ls.nvim") -- for formatters and linters
 	use({ "RRethy/vim-illuminate", commit = "c82e6d04f27a41d7fdcad9be0bce5bb59fcb78e5" })
 	use({ "L3MON4D3/LuaSnip", commit = "79b2019c68a2ff5ae4d732d50746c901dd45603a" }) --snippet engine
 	use({ "rafamadriz/friendly-snippets", commit = "d27a83a363e61009278b6598703a763ce9c8e617" }) -- a bunch of snippets to use
-  use("j-hui/fidget.nvim")
-  use("neovim/nvim-lspconfig")
+	use("j-hui/fidget.nvim")
+	use("neovim/nvim-lspconfig")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
