@@ -84,12 +84,13 @@ return packer.startup(function(use)
 
 	-- Gitsigns
 	use("lewis6991/gitsigns.nvim")
-
 	use({
 		"ThePrimeagen/harpoon",
-		branch = "harpoon2",
-		requires = { { "nvim-lua/plenary.nvim" } },
+		config = function()
+			require("user.harpoon").config()
+		end,
 	})
+
 	-- LSP
 	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
